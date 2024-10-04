@@ -1,0 +1,894 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+        <head>
+    
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        
+
+        
+                <meta charset="utf-8" />
+    <title>Virtual Reality | Stix Games</title>
+    <meta name="generator" content="GravCMS" />
+<meta name="description" content="StixGames is a developer of Unity Assets, like the DirectX 11 Grass Shader." />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="canonical" href="https://stixgames.com/grassshader/documentation/virtual-reality" />
+    
+        
+            <link href="/user/plugins/gantry5/engines/nucleus/css-compiled/nucleus.css" type="text/css" rel="stylesheet">
+<link href="/user/data/gantry5/themes/g5_helium/css-compiled/helium_grass_shader_documentation_page.css" type="text/css" rel="stylesheet">
+<link href="/user/data/gantry5/themes/g5_helium/css-compiled/helium-grav_grass_shader_documentation_page.css" type="text/css" rel="stylesheet">
+<link href="/user/plugins/gantry5/assets/css/font-awesome.min.css" type="text/css" rel="stylesheet">
+<link href="/user/data/gantry5/themes/g5_helium/css-compiled/custom_grass_shader_documentation_page.css" type="text/css" rel="stylesheet">
+<link href="/user/plugins/markdown-notices/assets/notices.css" type="text/css" rel="stylesheet">
+<link href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.6/cookieconsent.min.css" type="text/css" rel="stylesheet">
+<link href="/user/plugins/form/assets/form-styles.css" type="text/css" rel="stylesheet">
+<link href="/user/plugins/mathjax/assets/css/mathjax.css" type="text/css" rel="stylesheet">
+<link href="/user/plugins/page-toc/assets/page-toc-anchors.css" type="text/css" rel="stylesheet">
+<link href="/user/plugins/simplesearch/css/simplesearch.css" type="text/css" rel="stylesheet">
+<link href="/user/plugins/youtube/css/youtube.css" type="text/css" rel="stylesheet">
+<link href="/user/plugins/login/css/login.css" type="text/css" rel="stylesheet">
+
+        <script src="/user/plugins/anchors/js/anchor.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.6/cookieconsent.min.js"></script>
+<script src="/user/plugins/mathjax/assets/js/mathjax.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-62297327-1', 'auto');
+ga('send', 'pageview');
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"stixgames.com#organization","name":"Stix Games","url":"stixgames.com","sameAs":["https://www.youtube.com/channel/UC-Q-SlKoQSZEAT2jM91kNMg","https://twitter.com/@simon_stix"]},{"@type":"WebSite","@id":"https://stixgames.com#website","url":"https://stixgames.com","name":"Stix Games","publisher":{"@id":"stixgames.com#organization"}},{"@type":"WebPage","@id":"https://stixgames.com/grassshader/documentation/virtual-reality#webpage","url":"https://stixgames.com/grassshader/documentation/virtual-reality","inLanguage":"en","name":"Virtual Reality | Stix Games","isPartOf":{"@id":"https://stixgames.com#website"},"datePublished":"2020-03-11T10:05:01+00:00","dateModified":"2020-03-11T10:05:01+00:00"}]}
+</script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+                    anchors.options = {
+                        visible: 'hover',
+                        placement: 'right',
+                        
+                        
+                        truncate: 64
+                    };
+                    anchors.add('h1,h2,h3,h4');
+                });
+</script>
+<script>
+window.addEventListener("load", function(){
+window.cookieconsent.initialise({
+"palette": {
+    "popup": {
+        "background": "#000000",
+        "text": "#ffffff"
+    },
+    "button": {
+        "background": "#f1d600",
+        "text": "#000000",
+        "border": "#f1d600"
+    }
+},
+"position": "bottom",
+"theme": "block",
+"content": {
+    "message": "This website uses cookies to ensure you get the best experience on our website.",
+    "dismiss": "Got it!",
+    "link": "Learn more",
+    "href": "https://cookiesandyou.com"
+}
+})});
+</script>
+
+    
+
+                
+</head>
+
+    <body class="gantry g-helium-style documentation-page site default dir-ltr outline-grass_shader_documentation_page g-offcanvas-left g-default g-style-preset2">
+        
+                    
+
+        <div id="g-offcanvas"  data-g-offcanvas-swipe="1" data-g-offcanvas-css3="1">
+                        <div class="g-grid">                        
+
+        <div class="g-block size-100">
+             <div id="mobile-menu-8299-particle" class="g-content g-particle">            <div id="g-mobilemenu-container" data-g-menu-breakpoint="48rem"></div>
+            </div>
+        </div>
+            </div>
+    </div>
+        <div id="g-page-surround">
+            <div class="g-offcanvas-hide g-offcanvas-toggle" role="navigation" data-offcanvas-toggle aria-controls="g-offcanvas" aria-expanded="false"><i class="fa fa-fw fa-bars"></i></div>                        
+
+                                            
+                <section id="g-navigation">
+                <div class="g-container">                                <div class="g-grid">                        
+
+        <div class="g-block size-25">
+             <div id="logo-9608-particle" class="g-content g-particle">            <a href="/" target="_self" title="" aria-label="" rel="home" class="g-logo g-logo-helium">
+                        <svg id="Logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 98.2 21.84"><defs><style>.cls-1{fill:#fff;}</style></defs><title>Logo Test 2019</title><path class="cls-1" d="M41.2,10.8c0-3.86,2.33-6.22,5.5-6.22a4.65,4.65,0,0,1,3.45,1.48l-.83,1a3.42,3.42,0,0,0-2.58-1.13c-2.41,0-4,1.86-4,4.84s1.42,4.9,4,4.9a3.24,3.24,0,0,0,2.15-.7V11.84H46.38V10.57H50.3v5A5.11,5.11,0,0,1,46.61,17C43.45,17,41.2,14.69,41.2,10.8Z"/><path class="cls-1" d="M55.62,4.8h1.72l4,12H59.78l-2.09-6.69c-.43-1.34-.81-2.65-1.2-4h-.07c-.37,1.38-.76,2.69-1.19,4l-2.11,6.69H51.57ZM53.7,11.92h5.52v1.21H53.7Z"/><path class="cls-1" d="M63.08,4.8h1.84l2.29,6.4c.29.82.57,1.67.85,2.5h.08c.28-.83.54-1.68.82-2.5l2.27-6.4h1.84v12H71.65V10.19c0-1,.12-2.49.2-3.55h-.08l-1,2.74-2.25,6.19h-1L65.29,9.38l-1-2.74h-.07c.07,1.06.19,2.5.19,3.55v6.59H63.08Z"/><path class="cls-1" d="M76.35,4.8h6.9V6.09H77.87V9.85h4.54v1.29H77.87v4.35h5.56v1.29H76.35Z"/><path class="cls-1" d="M85.1,15.22l.91-1a4.69,4.69,0,0,0,3.3,1.48c1.57,0,2.51-.78,2.51-1.95s-.87-1.61-2-2.1l-1.72-.76a3.39,3.39,0,0,1-2.43-3.09c0-1.83,1.6-3.18,3.77-3.18A5,5,0,0,1,93,6.07l-.81,1a3.8,3.8,0,0,0-2.72-1.13c-1.34,0-2.23.68-2.23,1.75s1,1.59,2,2l1.71.74c1.39.6,2.47,1.42,2.47,3.21S91.8,17,89.29,17A5.73,5.73,0,0,1,85.1,15.22Z"/><path class="cls-1" d="M2,2V19.67H96.11V2ZM8.3,17a5.76,5.76,0,0,1-4.19-1.78l.91-1a4.69,4.69,0,0,0,3.3,1.48c1.58,0,2.51-.78,2.51-1.95s-.87-1.61-2-2.1l-1.72-.76A3.39,3.39,0,0,1,4.68,7.76c0-1.83,1.6-3.18,3.78-3.18A4.93,4.93,0,0,1,12,6.07l-.81,1A3.79,3.79,0,0,0,8.46,5.92c-1.35,0-2.24.68-2.24,1.75s1,1.59,2,2l1.7.74c1.39.6,2.47,1.42,2.47,3.21S10.82,17,8.3,17ZM22.36,6.09H18.74V16.78H17.21V6.09H13.59V4.8h8.77ZM26,16.78H24.5V4.8H26Zm9,0-1.76-3.22c-.31-.6-.64-1.2-1-1.93h-.07c-.35.73-.65,1.33-.95,1.93l-1.73,3.22H27.94l3.49-6.19L28.17,4.8h1.68l1.64,3.07c.3.55.55,1,.93,1.74h.07c.33-.7.56-1.19.85-1.74L34.93,4.8h1.6l-3.26,5.87,3.49,6.11Zm60,1.89H39.43V3H95.11Z"/></svg>
+            </a>
+            </div>
+        </div>
+                    
+
+        <div class="g-block size-75">
+             <div id="menu-6409-particle" class="g-content g-particle">            <nav class="g-main-nav" data-g-hover-expand="true">
+        <ul class="g-toplevel">
+                                                                                                                
+        
+                
+        
+                
+        
+        <li class="g-menu-item g-menu-item-type-link g-menu-item-tile-composer g-parent g-standard g-menu-item-link-parent ">
+                            <a class="g-menu-item-container" href="/">
+                                                                <span class="g-menu-item-content">
+                                    <span class="g-menu-item-title">Tile Composer</span>
+            
+                    </span>
+                    <span class="g-menu-parent-indicator" data-g-menuparent=""></span>                            </a>
+                                                                            <ul class="g-dropdown g-inactive g-fade g-dropdown-right">
+            <li class="g-dropdown-column">
+                        <div class="g-grid">
+                        <div class="g-block size-100">
+            <ul class="g-sublevel">
+                <li class="g-level-1 g-go-back">
+                    <a class="g-menu-item-container" href="#" data-g-menuparent=""><span>Back</span></a>
+                </li>
+                                                                                                                    
+        
+                
+        
+                
+        
+        <li class="g-menu-item g-menu-item-type-link g-menu-item-tile-composer/documentation g-parent g-menu-item-link-parent ">
+                            <a class="g-menu-item-container" href="/tile-composer/documentation">
+                                                                <span class="g-menu-item-content">
+                                    <span class="g-menu-item-title">Documentation</span>
+            
+                    </span>
+                    <span class="g-menu-parent-indicator" data-g-menuparent=""></span>                            </a>
+                                                                            <ul class="g-dropdown g-inactive g-fade g-dropdown-right">
+            <li class="g-dropdown-column">
+                        <div class="g-grid">
+                        <div class="g-block size-100">
+            <ul class="g-sublevel">
+                <li class="g-level-2 g-go-back">
+                    <a class="g-menu-item-container" href="#" data-g-menuparent=""><span>Back</span></a>
+                </li>
+                                                                                                                    
+        
+                
+        
+                
+        
+        <li class="g-menu-item g-menu-item-type-link g-menu-item-tile-composer/documentation/introduction  ">
+                            <a class="g-menu-item-container" href="/tile-composer/documentation/introduction">
+                                                                <span class="g-menu-item-content">
+                                    <span class="g-menu-item-title">Introduction</span>
+            
+                    </span>
+                                                </a>
+                                </li>
+    
+                                                                                                
+        
+                
+        
+                
+        
+        <li class="g-menu-item g-menu-item-type-link g-menu-item-tile-composer/documentation/tile-collections  ">
+                            <a class="g-menu-item-container" href="/tile-composer/documentation/tile-collections">
+                                                                <span class="g-menu-item-content">
+                                    <span class="g-menu-item-title">Documentation: Tile Collections</span>
+            
+                    </span>
+                                                </a>
+                                </li>
+    
+                                                                                                
+        
+                
+        
+                
+        
+        <li class="g-menu-item g-menu-item-type-link g-menu-item-tile-composer/documentation/tile-component  ">
+                            <a class="g-menu-item-container" href="/tile-composer/documentation/tile-component">
+                                                                <span class="g-menu-item-content">
+                                    <span class="g-menu-item-title">Documentation: Tile</span>
+            
+                    </span>
+                                                </a>
+                                </li>
+    
+                                                                                                
+        
+                
+        
+                
+        
+        <li class="g-menu-item g-menu-item-type-link g-menu-item-tile-composer/documentation/tile-composer  ">
+                            <a class="g-menu-item-container" href="/tile-composer/documentation/tile-composer">
+                                                                <span class="g-menu-item-content">
+                                    <span class="g-menu-item-title">Documentation: Tile Composer</span>
+            
+                    </span>
+                                                </a>
+                                </li>
+    
+                                                                                                
+        
+                
+        
+                
+        
+        <li class="g-menu-item g-menu-item-type-link g-menu-item-tile-composer/documentation/solvers  ">
+                            <a class="g-menu-item-container" href="/tile-composer/documentation/solvers">
+                                                                <span class="g-menu-item-content">
+                                    <span class="g-menu-item-title">Documentation: Solvers</span>
+            
+                    </span>
+                                                </a>
+                                </li>
+    
+                                                                                                
+        
+                
+        
+                
+        
+        <li class="g-menu-item g-menu-item-type-link g-menu-item-tile-composer/documentation/helpful-tools  ">
+                            <a class="g-menu-item-container" href="/tile-composer/documentation/helpful-tools">
+                                                                <span class="g-menu-item-content">
+                                    <span class="g-menu-item-title">Documentation: Helpful Tools</span>
+            
+                    </span>
+                                                </a>
+                                </li>
+    
+                                                                                                
+        
+                
+        
+                
+        
+        <li class="g-menu-item g-menu-item-type-link g-menu-item-tile-composer/documentation/tutorial-empty-tiles  ">
+                            <a class="g-menu-item-container" href="/tile-composer/documentation/tutorial-empty-tiles">
+                                                                <span class="g-menu-item-content">
+                                    <span class="g-menu-item-title">Tutorial: Empty Tiles</span>
+            
+                    </span>
+                                                </a>
+                                </li>
+    
+                                                                                                
+        
+                
+        
+                
+        
+        <li class="g-menu-item g-menu-item-type-link g-menu-item-tile-composer/documentation/tutorial-connectors  ">
+                            <a class="g-menu-item-container" href="/tile-composer/documentation/tutorial-connectors">
+                                                                <span class="g-menu-item-content">
+                                    <span class="g-menu-item-title">Tutorial: Connectors</span>
+            
+                    </span>
+                                                </a>
+                                </li>
+    
+                                                                                                
+        
+                
+        
+                
+        
+        <li class="g-menu-item g-menu-item-type-link g-menu-item-tile-composer/documentation/tutorial-neighbors-from-mesh  ">
+                            <a class="g-menu-item-container" href="/tile-composer/documentation/tutorial-neighbors-from-mesh">
+                                                                <span class="g-menu-item-content">
+                                    <span class="g-menu-item-title">Tutorial: Neighbors from mesh</span>
+            
+                    </span>
+                                                </a>
+                                </li>
+    
+                                                                                                
+        
+                
+        
+                
+        
+        <li class="g-menu-item g-menu-item-type-link g-menu-item-tile-composer/documentation/tutorial-neighbor-matrix-editing  ">
+                            <a class="g-menu-item-container" href="/tile-composer/documentation/tutorial-neighbor-matrix-editing">
+                                                                <span class="g-menu-item-content">
+                                    <span class="g-menu-item-title">Tutorial: Neighbor matrix editing</span>
+            
+                    </span>
+                                                </a>
+                                </li>
+    
+                                                                                                
+        
+                
+        
+                
+        
+        <li class="g-menu-item g-menu-item-type-link g-menu-item-tile-composer/documentation/combining-workflows  ">
+                            <a class="g-menu-item-container" href="/tile-composer/documentation/combining-workflows">
+                                                                <span class="g-menu-item-content">
+                                    <span class="g-menu-item-title">Combining Workflows</span>
+            
+                    </span>
+                                                </a>
+                                </li>
+    
+                                                                                                
+        
+                
+        
+                
+        
+        <li class="g-menu-item g-menu-item-type-link g-menu-item-tile-composer/documentation/multiple-tile-composer-passes  ">
+                            <a class="g-menu-item-container" href="/tile-composer/documentation/multiple-tile-composer-passes">
+                                                                <span class="g-menu-item-content">
+                                    <span class="g-menu-item-title">Tutorial: Multiple Tile Composer Passes</span>
+            
+                    </span>
+                                                </a>
+                                </li>
+    
+                                                                                                
+        
+                
+        
+                
+        
+        <li class="g-menu-item g-menu-item-type-link g-menu-item-tile-composer/documentation/custom-grid-type  ">
+                            <a class="g-menu-item-container" href="/tile-composer/documentation/custom-grid-type">
+                                                                <span class="g-menu-item-content">
+                                    <span class="g-menu-item-title">Custom Grid Types</span>
+            
+                    </span>
+                                                </a>
+                                </li>
+    
+    
+            </ul>
+        </div>
+            </div>
+
+            </li>
+        </ul>
+            </li>
+    
+    
+            </ul>
+        </div>
+            </div>
+
+            </li>
+        </ul>
+            </li>
+    
+                                                                                                
+        
+                
+        
+                
+        
+        <li class="g-menu-item g-menu-item-type-link g-menu-item-grassshader g-parent active g-standard g-menu-item-link-parent ">
+                            <a class="g-menu-item-container" href="/grassshader">
+                                                                <span class="g-menu-item-content">
+                                    <span class="g-menu-item-title">DirectX 11 Grass Shader</span>
+            
+                    </span>
+                    <span class="g-menu-parent-indicator" data-g-menuparent=""></span>                            </a>
+                                                                            <ul class="g-dropdown g-inactive g-fade g-dropdown-right">
+            <li class="g-dropdown-column">
+                        <div class="g-grid">
+                        <div class="g-block size-100">
+            <ul class="g-sublevel">
+                <li class="g-level-1 g-go-back">
+                    <a class="g-menu-item-container" href="#" data-g-menuparent=""><span>Back</span></a>
+                </li>
+                                                                                                                    
+        
+                
+        
+                
+        
+        <li class="g-menu-item g-menu-item-type-link g-menu-item-grassshader/documentation g-parent active g-menu-item-link-parent ">
+                            <a class="g-menu-item-container" href="/grassshader/documentation">
+                                                                <span class="g-menu-item-content">
+                                    <span class="g-menu-item-title">Documentation</span>
+            
+                    </span>
+                    <span class="g-menu-parent-indicator" data-g-menuparent=""></span>                            </a>
+                                                                            <ul class="g-dropdown g-inactive g-fade g-dropdown-right">
+            <li class="g-dropdown-column">
+                        <div class="g-grid">
+                        <div class="g-block size-100">
+            <ul class="g-sublevel">
+                <li class="g-level-2 g-go-back">
+                    <a class="g-menu-item-container" href="#" data-g-menuparent=""><span>Back</span></a>
+                </li>
+                                                                                                                    
+        
+                
+        
+                
+        
+        <li class="g-menu-item g-menu-item-type-link g-menu-item-grassshader/documentation/general  ">
+                            <a class="g-menu-item-container" href="/grassshader/documentation/general">
+                                                                <span class="g-menu-item-content">
+                                    <span class="g-menu-item-title">General Overview</span>
+            
+                    </span>
+                                                </a>
+                                </li>
+    
+                                                                                                
+        
+                
+        
+                
+        
+        <li class="g-menu-item g-menu-item-type-link g-menu-item-grassshader/documentation/grass-painter  ">
+                            <a class="g-menu-item-container" href="/grassshader/documentation/grass-painter">
+                                                                <span class="g-menu-item-content">
+                                    <span class="g-menu-item-title">Grass Painter</span>
+            
+                    </span>
+                                                </a>
+                                </li>
+    
+                                                                                                
+        
+                
+        
+                
+        
+        <li class="g-menu-item g-menu-item-type-link g-menu-item-grassshader/documentation/interaction-system  ">
+                            <a class="g-menu-item-container" href="/grassshader/documentation/interaction-system">
+                                                                <span class="g-menu-item-content">
+                                    <span class="g-menu-item-title">Interaction System</span>
+            
+                    </span>
+                                                </a>
+                                </li>
+    
+                                                                                                
+        
+                
+        
+                
+        
+        <li class="g-menu-item g-menu-item-type-link g-menu-item-grassshader/documentation/cpu-fallback  ">
+                            <a class="g-menu-item-container" href="/grassshader/documentation/cpu-fallback">
+                                                                <span class="g-menu-item-content">
+                                    <span class="g-menu-item-title">CPU Fallback</span>
+            
+                    </span>
+                                                </a>
+                                </li>
+    
+                                                                                                
+        
+                
+        
+                
+        
+        <li class="g-menu-item g-menu-item-type-link g-menu-item-grassshader/documentation/grass-texture-atlas-templates  ">
+                            <a class="g-menu-item-container" href="/grassshader/documentation/grass-texture-atlas-templates">
+                                                                <span class="g-menu-item-content">
+                                    <span class="g-menu-item-title">Grass Texture Atlas Templates</span>
+            
+                    </span>
+                                                </a>
+                                </li>
+    
+                                                                                                
+        
+                
+        
+                
+        
+        <li class="g-menu-item g-menu-item-type-link g-menu-item-grassshader/documentation/performance-optimization  ">
+                            <a class="g-menu-item-container" href="/grassshader/documentation/performance-optimization">
+                                                                <span class="g-menu-item-content">
+                                    <span class="g-menu-item-title">Performance Optimization</span>
+            
+                    </span>
+                                                </a>
+                                </li>
+    
+                                                                                                
+        
+                
+        
+                
+        
+        <li class="g-menu-item g-menu-item-type-link g-menu-item-grassshader/documentation/improve-visuals  ">
+                            <a class="g-menu-item-container" href="/grassshader/documentation/improve-visuals">
+                                                                <span class="g-menu-item-content">
+                                    <span class="g-menu-item-title">Improve Visuals</span>
+            
+                    </span>
+                                                </a>
+                                </li>
+    
+                                                                                                
+        
+                
+        
+                
+        
+        <li class="g-menu-item g-menu-item-type-link g-menu-item-grassshader/documentation/virtual-reality active  ">
+                            <a class="g-menu-item-container" href="/grassshader/documentation/virtual-reality">
+                                                                <span class="g-menu-item-content">
+                                    <span class="g-menu-item-title">Virtual Reality</span>
+            
+                    </span>
+                                                </a>
+                                </li>
+    
+                                                                                                
+        
+                
+        
+                
+        
+        <li class="g-menu-item g-menu-item-type-link g-menu-item-grassshader/documentation/using-urp-and-hdrp  ">
+                            <a class="g-menu-item-container" href="/grassshader/documentation/using-urp-and-hdrp">
+                                                                <span class="g-menu-item-content">
+                                    <span class="g-menu-item-title">Using URP and HDRP</span>
+            
+                    </span>
+                                                </a>
+                                </li>
+    
+                                                                                                
+        
+                
+        
+                
+        
+        <li class="g-menu-item g-menu-item-type-link g-menu-item-grassshader/documentation/upgrade-to-version-2  ">
+                            <a class="g-menu-item-container" href="/grassshader/documentation/upgrade-to-version-2">
+                                                                <span class="g-menu-item-content">
+                                    <span class="g-menu-item-title">Upgrade to version 2</span>
+            
+                    </span>
+                                                </a>
+                                </li>
+    
+    
+            </ul>
+        </div>
+            </div>
+
+            </li>
+        </ul>
+            </li>
+    
+    
+            </ul>
+        </div>
+            </div>
+
+            </li>
+        </ul>
+            </li>
+    
+                                                                                                
+        
+                
+        
+                
+        
+        <li class="g-menu-item g-menu-item-type-link g-menu-item-contact g-standard  ">
+                            <a class="g-menu-item-container" href="/contact">
+                                                                <span class="g-menu-item-content">
+                                    <span class="g-menu-item-title">Contact</span>
+            
+                    </span>
+                                                </a>
+                                </li>
+    
+    
+        </ul>
+    </nav>
+            </div>
+        </div>
+            </div>
+            </div>
+        
+    </section>
+                
+                                
+    
+    
+                <section id="g-container-main" class="g-wrapper">
+                            <div class="g-grid">                        
+
+        <div class="g-block size-25">
+             <main id="g-mainbar">
+                                        <div class="g-grid">                        
+
+        <div class="g-block size-100">
+             <div id="documentationsidebar-7632-particle" class="g-content g-particle">            <div class="documentation-sidebar">
+	<div class="documentation-list">
+	<h4>Documentation</h4>
+    <ul>
+						<li><a href="/grassshader/documentation/general">General Overview</a></li>
+								<li><a href="/grassshader/documentation/grass-painter">Grass Painter</a></li>
+								<li><a href="/grassshader/documentation/interaction-system">Interaction System</a></li>
+								<li><a href="/grassshader/documentation/cpu-fallback">CPU Fallback</a></li>
+								<li><a href="/grassshader/documentation/grass-texture-atlas-templates">Grass Texture Atlas Templates</a></li>
+								<li><a href="/grassshader/documentation/performance-optimization">Performance Optimization</a></li>
+								<li><a href="/grassshader/documentation/improve-visuals">Improve Visuals</a></li>
+								<li><a href="/grassshader/documentation/virtual-reality">Virtual Reality</a></li>
+								<li><a href="/grassshader/documentation/using-urp-and-hdrp">Using URP and HDRP</a></li>
+								<li><a href="/grassshader/documentation/upgrade-to-version-2">Upgrade to version 2</a></li>
+				</ul>
+	</div>
+
+	<div class="table-of-contents">
+            <h4>Table of Contents</h4>
+    <ul>
+  <li class="first">
+    <a href="#fix-visual-artifacts">Fix visual artifacts</a>
+  </li>
+  <li>
+    <a href="#optimization">Optimization</a>
+  </li>
+  <li class="last">
+    <a href="#grass-fallback">Grass Fallback</a>
+  </li>
+</ul>
+
+    	</div>
+</div>
+            </div>
+        </div>
+            </div>
+            
+    </main>
+        </div>
+                    
+
+        <div class="g-block size-75">
+             <aside id="g-sidebar">
+                                        <div class="g-grid">                        
+
+        <div class="g-block size-80 documentation-navigation">
+             <div id="parentpath-9686-particle" class="g-content g-particle">            <div class="parent-path">
+				
+		<span><a href="/grassshader">DirectX 11 Grass Shader</a></span>
+							&gt;
+			
+		<span><a href="/grassshader/documentation">Documentation</a></span>
+							&gt;
+			
+		<span><a href="/grassshader/documentation/virtual-reality">Virtual Reality</a></span>
+	</div>
+            </div>
+        </div>
+                    
+
+        <div class="g-block size-20">
+             <div class="spacer"></div>
+        </div>
+            </div>
+                            <div class="g-grid">                        
+
+        <div class="g-block size-80 documentation">
+             <div class="g-content">
+                                                            <h1 id="fix-visual-artifacts">Fix visual artifacts<a href="#fix-visual-artifacts" class="toc-anchor after" data-anchor-icon="#" aria-label="Anchor"></a></h1>
+<p>In VR the camera renders 2 perspectives per frame, one for each eye. The billboard, screen-oriented grass looks good in 2D, however, this relies on some visual faking which will cause a perceived flickering in VR. It is recommended to use the randomized grass orientation, which ensures that the grass is rendered perspectively accurate for each eye.</p>
+<h1 id="optimization">Optimization<a href="#optimization" class="toc-anchor after" data-anchor-icon="#" aria-label="Anchor"></a></h1>
+<p>As performance is extremely important in VR, you should look at the page about <a href="/grassshader/documentation/performance-optimization">performance optimization</a> in detail.</p>
+<h1 id="grass-fallback">Grass Fallback<a href="#grass-fallback" class="toc-anchor after" data-anchor-icon="#" aria-label="Anchor"></a></h1>
+<p>Consider using the grass fallback instead of the shader itself. While the grass shader is very performant, it is still a high-end effect. The grass fallback could be used to reduce this performance cost, while still keeping your art style. This is especially useful if you are creating an application or game that supports both 2D and VR: On regular screens, you could use the shader, while in VR the fallback could be used to improve the performance and reach even higher FPS.</p>
+    
+            
+    </div>
+        </div>
+                    
+
+        <div class="g-block size-20 flexible-space">
+             <div class="spacer"></div>
+        </div>
+            </div>
+                            <div class="g-grid">                        
+
+        <div class="g-block size-80">
+             <div id="custom-9128-particle" class="g-content g-particle">            <hr>
+<div class="documentation-page__endtext">
+If you think something is missing from this documentation page, or would like to give us feedback, please contact us through the <a href="/contact">contact form</a>.
+</div>
+            </div>
+        </div>
+                    
+
+        <div class="g-block size-20">
+             <div class="spacer"></div>
+        </div>
+            </div>
+            
+    </aside>
+        </div>
+            </div>
+    
+    </section>
+    
+                    
+                <footer id="g-footer">
+                                        <div class="g-grid">                        
+
+        <div class="g-block size-20">
+             <div class="spacer"></div>
+        </div>
+                    
+
+        <div class="g-block size-12">
+             <div id="logo-7020-particle" class="g-content g-particle">            <a href="/" target="_self" title="" aria-label="" rel="home" class="g-logo g-logo-helium">
+                        <svg id="Logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 98.2 21.84"><defs><style>.cls-1{fill:#fff;}</style></defs><title>Logo Test 2019</title><path class="cls-1" d="M41.2,10.8c0-3.86,2.33-6.22,5.5-6.22a4.65,4.65,0,0,1,3.45,1.48l-.83,1a3.42,3.42,0,0,0-2.58-1.13c-2.41,0-4,1.86-4,4.84s1.42,4.9,4,4.9a3.24,3.24,0,0,0,2.15-.7V11.84H46.38V10.57H50.3v5A5.11,5.11,0,0,1,46.61,17C43.45,17,41.2,14.69,41.2,10.8Z"/><path class="cls-1" d="M55.62,4.8h1.72l4,12H59.78l-2.09-6.69c-.43-1.34-.81-2.65-1.2-4h-.07c-.37,1.38-.76,2.69-1.19,4l-2.11,6.69H51.57ZM53.7,11.92h5.52v1.21H53.7Z"/><path class="cls-1" d="M63.08,4.8h1.84l2.29,6.4c.29.82.57,1.67.85,2.5h.08c.28-.83.54-1.68.82-2.5l2.27-6.4h1.84v12H71.65V10.19c0-1,.12-2.49.2-3.55h-.08l-1,2.74-2.25,6.19h-1L65.29,9.38l-1-2.74h-.07c.07,1.06.19,2.5.19,3.55v6.59H63.08Z"/><path class="cls-1" d="M76.35,4.8h6.9V6.09H77.87V9.85h4.54v1.29H77.87v4.35h5.56v1.29H76.35Z"/><path class="cls-1" d="M85.1,15.22l.91-1a4.69,4.69,0,0,0,3.3,1.48c1.57,0,2.51-.78,2.51-1.95s-.87-1.61-2-2.1l-1.72-.76a3.39,3.39,0,0,1-2.43-3.09c0-1.83,1.6-3.18,3.77-3.18A5,5,0,0,1,93,6.07l-.81,1a3.8,3.8,0,0,0-2.72-1.13c-1.34,0-2.23.68-2.23,1.75s1,1.59,2,2l1.71.74c1.39.6,2.47,1.42,2.47,3.21S91.8,17,89.29,17A5.73,5.73,0,0,1,85.1,15.22Z"/><path class="cls-1" d="M2,2V19.67H96.11V2ZM8.3,17a5.76,5.76,0,0,1-4.19-1.78l.91-1a4.69,4.69,0,0,0,3.3,1.48c1.58,0,2.51-.78,2.51-1.95s-.87-1.61-2-2.1l-1.72-.76A3.39,3.39,0,0,1,4.68,7.76c0-1.83,1.6-3.18,3.78-3.18A4.93,4.93,0,0,1,12,6.07l-.81,1A3.79,3.79,0,0,0,8.46,5.92c-1.35,0-2.24.68-2.24,1.75s1,1.59,2,2l1.7.74c1.39.6,2.47,1.42,2.47,3.21S10.82,17,8.3,17ZM22.36,6.09H18.74V16.78H17.21V6.09H13.59V4.8h8.77ZM26,16.78H24.5V4.8H26Zm9,0-1.76-3.22c-.31-.6-.64-1.2-1-1.93h-.07c-.35.73-.65,1.33-.95,1.93l-1.73,3.22H27.94l3.49-6.19L28.17,4.8h1.68l1.64,3.07c.3.55.55,1,.93,1.74h.07c.33-.7.56-1.19.85-1.74L34.93,4.8h1.6l-3.26,5.87,3.49,6.11Zm60,1.89H39.43V3H95.11Z"/></svg>
+            </a>
+            </div>
+        </div>
+                    
+
+        <div class="g-block size-10">
+             <div id="copyright-1736-particle" class="g-content g-particle">            <div class="g-copyright ">
+    &copy;
+            StixGames
+        2015 -     2024
+    <br />All rights reserved.</div>
+            </div>
+        </div>
+                    
+
+        <div class="g-block size-38">
+             <div id="newsletter-4289-particle" class="g-content g-particle">            <!-- Begin Sendinblue Form -->
+<!-- START - We recommend to place the below code in head tag of your website html  -->
+<link rel="stylesheet" href="https://assets.sendinblue.com/component/form/2ef8d8058c0694a305b0.css">
+<link rel="stylesheet" href="https://assets.sendinblue.com/component/clickable/b056d6397f4ba3108595.css">
+<link rel="stylesheet" href="https://assets.sendinblue.com/component/progress-indicator/f86d65a4a9331c5e2851.css">
+<link rel="stylesheet" href="https://sibforms.com/forms/end-form/build/sib-styles.css">
+<!--  END - We recommend to place the above code in head tag of your website html -->
+
+<!-- START - We recommend to place the below code where you want the form in your website html  -->
+<div class="newsletter-form newsletter-form-footer">
+  <div id="sib-form-container" class="newsletter-container">
+    <div id="error-message" class="sib-form-message-panel">
+      <div class="sib-form-message-panel__text sib-form-message-panel__text--center">
+        <svg viewBox="0 0 512 512" class="sib-icon sib-notification__icon">
+          <path d="M256 40c118.621 0 216 96.075 216 216 0 119.291-96.61 216-216 216-119.244 0-216-96.562-216-216 0-119.203 96.602-216 216-216m0-32C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm-11.49 120h22.979c6.823 0 12.274 5.682 11.99 12.5l-7 168c-.268 6.428-5.556 11.5-11.99 11.5h-8.979c-6.433 0-11.722-5.073-11.99-11.5l-7-168c-.283-6.818 5.167-12.5 11.99-12.5zM256 340c-15.464 0-28 12.536-28 28s12.536 28 28 28 28-12.536 28-28-12.536-28-28-28z"
+          />
+        </svg>
+        <span class="sib-form-message-panel__inner-text">
+                          The entered information could not be validated.
+                      </span>
+      </div>
+    </div>
+    <div></div>
+    <div id="success-message" class="sib-form-message-panel">
+      <div class="sib-form-message-panel__text sib-form-message-panel__text--center">
+        <svg viewBox="0 0 512 512" class="sib-icon sib-notification__icon">
+          <path d="M256 8C119.033 8 8 119.033 8 256s111.033 248 248 248 248-111.033 248-248S392.967 8 256 8zm0 464c-118.664 0-216-96.055-216-216 0-118.663 96.055-216 216-216 118.664 0 216 96.055 216 216 0 118.663-96.055 216-216 216zm141.63-274.961L217.15 376.071c-4.705 4.667-12.303 4.637-16.97-.068l-85.878-86.572c-4.667-4.705-4.637-12.303.068-16.97l8.52-8.451c4.705-4.667 12.303-4.637 16.97.068l68.976 69.533 163.441-162.13c4.705-4.667 12.303-4.637 16.97.068l8.451 8.52c4.668 4.705 4.637 12.303-.068 16.97z"
+          />
+        </svg>
+        <span class="sib-form-message-panel__inner-text">
+                          You will receive a mail to confirm your registration.
+                      </span>
+      </div>
+    </div>
+    <div></div>
+    <div>
+      <form id="sib-form" method="POST" action="https://53ff2957.sibforms.com/serve/MUIEADL2-rVLloc4D02do-OHSZUi8gYGg0--WEpUskX5kEwJmaWghkW0swZkUBUy4bx-0x4bTar7AHcIvWSMmKroBAqlXPGtWazb2xuLyGT1cD9nIcPjGFpr_40_2TUDKxWa8clR2DCcuUyfO_CT2R3TNfyY6TGGokQzu59B0kZyRx2KnbDfE4MtTyLrr-Hkf82q1-2Zdnne0LJK"
+        data-type="subscription">
+        <div>
+			<div class="g-grid newsletter-grid">
+				<div class="g-block size-20"></div>
+				<div class="g-block size-80 newsletter-form__newsletter-label">
+				  <label>
+					  Newsletter
+					</label>
+				</div>
+			
+				<div class="g-block size-20"></div>
+				<div class="newsletter-form__email-field g-block size-60">
+				  <input type="text" id="EMAIL" name="EMAIL" autocomplete="off" placeholder="Enter your E-Mail here" data-required="true" required />
+				</div>
+				<div class="newsletter-form__subscribe-button g-block size-20">
+					<button form="sib-form" class="button button-small" type="submit">
+						<svg class="icon clickable__icon progress-indicator__icon sib-hide-loader-icon" viewBox="0 0 512 512">
+							<path d="M460.116 373.846l-20.823-12.022c-5.541-3.199-7.54-10.159-4.663-15.874 30.137-59.886 28.343-131.652-5.386-189.946-33.641-58.394-94.896-95.833-161.827-99.676C261.028 55.961 256 50.751 256 44.352V20.309c0-6.904 5.808-12.337 12.703-11.982 83.556 4.306 160.163 50.864 202.11 123.677 42.063 72.696 44.079 162.316 6.031 236.832-3.14 6.148-10.75 8.461-16.728 5.01z" />				
+						</svg>
+						Subscribe
+					</button>
+				</div>
+			</div>
+        </div>
+
+        <input type="text" name="email_address_check" value="" class="input--hidden">
+        <input type="hidden" name="locale" value="de">
+      </form>
+    </div>
+  </div>
+</div>
+<!-- END - We recommend to place the below code where you want the form in your website html  -->
+
+<!-- START - We recommend to place the below code in footer or bottom of your website html  -->
+<script>
+  window.REQUIRED_CODE_ERROR_MESSAGE = 'Wählen Sie bitte einen Ländercode aus';
+
+  window.EMAIL_INVALID_MESSAGE = window.SMS_INVALID_MESSAGE = "The information entered is not valid. Please check the entered email and try again.";
+
+  window.REQUIRED_ERROR_MESSAGE = "This field must not be empty. ";
+
+  window.GENERIC_INVALID_MESSAGE = "The information entered is not valid. Please check the entered email and try again.";
+
+
+
+
+  window.translation = {
+    common: {
+      selectedList: '{quantity} Liste ausgewählt',
+      selectedLists: '{quantity} Listen ausgewählt'
+    }
+  };
+
+  var AUTOHIDE = Boolean(0);
+</script>
+<script src="https://sibforms.com/forms/end-form/build/main.js">
+</script>
+<script src="https://www.google.com/recaptcha/api.js?hl=de"></script>
+<!-- END - We recommend to place the above code in footer or bottom of your website html  -->
+<!-- End Sendinblue Form -->
+            </div>
+        </div>
+                    
+
+        <div class="g-block size-20">
+             <div class="spacer"></div>
+        </div>
+            </div>
+                            <div class="g-grid">                        
+
+        <div class="g-block size-20">
+             <div class="spacer"></div>
+        </div>
+                    
+
+        <div class="g-block size-60 impressum-block">
+             <div id="custom-5876-particle" class="g-content g-particle">            <hr>
+<a href="/impressum">Impressum</a>
+            </div>
+        </div>
+                    
+
+        <div class="g-block size-20">
+             <div class="spacer"></div>
+        </div>
+            </div>
+            
+    </footer>
+            
+                        
+
+        </div>
+                    
+
+                <script src="/user/plugins/gantry5/assets/js/main.js" ></script>
+<script src="/user/plugins/simplesearch/js/simplesearch.js"></script>
+
+
+    
+
+        
+    </body>
+</html>
