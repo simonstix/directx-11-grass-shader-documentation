@@ -26,7 +26,7 @@ Like with any other camera, the interaction renderer can't render anything outsi
 1. In the project window, navigate to the folder where you want to create your grass material.
 2. Right click > Create > Material
 3. Select the shader: `Stix Games / Grass Interaction / Interaction`
-4. Add any normal, alpha, or burn maps you require. [More info later.](broken-reference)
+4. Add any normal, alpha, or burn maps you require.
 5. Create a mesh for your displacement object, for example a quad object, and add the new material as usual.
 6. Add Component to the new object: `Stix Games > Interaction > Interaction Object`
 7. Disable the mesh renderer, but don't delete it, it is used to store the material. You can enable the mesh renderer for debugging your interaction object.
@@ -41,7 +41,7 @@ The Interaction shader can be used for a variety of interaction effects, for exa
 
 #### Influence Strength
 
-This setting doesn't actually change the strength for your setting, but it will change how strongly it will override other interactors. If an interactor with influence 100 is overlapping a interactor with influence strength 1, it first one will basically override the second one.
+This setting doesn't change the strength of your setting, but it will change how strongly it will override other interactors. If an interactor with influence 100 is overlapping an interactor with influence strength 1, it first one will override the second one.
 
 You can use this to create an interaction area around your character, that will be stronger than any other interactor effect, so even with trails on the ground or explosion shockwaves, the grass will still move away from the character.
 
