@@ -21,6 +21,7 @@
   * [Texture Atlas Renderer Settings](advanced-features/cpu-fallback/texture-atlas-renderer-settings.md)
   * [Grass Fallback Renderer](advanced-features/cpu-fallback/grass-fallback-renderer.md)
 * [Grass Texture Atlas Templates](advanced-features/grass-texture-atlas-templates.md)
+* [Global Shader Variables](advanced-features/global-shader-variables.md)
 
 ## Guides
 
