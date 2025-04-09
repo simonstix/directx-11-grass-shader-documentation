@@ -27,5 +27,6 @@
 
 * [Performance Optimization](guides/performance-optimization.md)
 * [Improve Visuals](guides/improve-visuals.md)
+* [Fix Visual Artifacts](guides/fix-visual-artifacts.md)
 * [Virtual Reality](guides/virtual-reality.md)
 * [Render Pipelines](guides/render-pipelines.md)
