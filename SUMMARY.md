@@ -22,6 +22,7 @@
   * [Grass Fallback Renderer](advanced-features/cpu-fallback/grass-fallback-renderer.md)
 * [Grass Texture Atlas Templates](advanced-features/grass-texture-atlas-templates.md)
 * [Global Shader Variables](advanced-features/global-shader-variables.md)
+* [Changing the grass density center](advanced-features/changing-the-grass-density-center.md)
 
 ## Guides
 
